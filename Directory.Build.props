@@ -1,10 +1,16 @@
 <Project>
   <ItemGroup>
-    <PackageReference 
-      Include="StyleCop.Analyzers" 
-      Version="1.1.118"
-      PrivateAssets="all" 
-      Condition="$(MSBuildProjectExtension) == '.csproj'" 
+    <!-- Reference SS.Xaml.Analyzers in example .csproj files under the examples folder -->
+    <ProjectReference
+      Include="..\..\SS.Xaml.Analyzers\SS.Xaml.Analyzers.csproj"
+      Condition="$(MSBuildProjectExtension) == '.csproj' AND $([System.Text.RegularExpressions.Regex]::IsMatch($(MSBuildProjectDirectory), '\\examples\\'))"
     />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference
+      Include="StyleCop.Analyzers"
+      Version="1.1.118"
+      Condition="$(MSBuildProjectExtension) == '.csproj'" />
   </ItemGroup>
 </Project>
