@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SS.StyleCop.Examples.Sample
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SS.StyleCop.Examples.SecondProject", "examples\SS.StyleCop.Examples.SecondProject\SS.StyleCop.Examples.SecondProject.csproj", "{4E2AB6E5-7ED4-4902-880D-E570F39CDC06}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SS.StyleCop.Examples.Maui", "examples\SS.StyleCop.Examples.Maui\SS.StyleCop.Examples.Maui.csproj", "{FE5BAFFC-C9D9-45D1-812D-F63E918D71F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2929D561-016A-44A7-9F00-2AAB8C92FB16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SS.Xaml.Analyzers", "src\SS.Xaml.Analyzers\SS.Xaml.Analyzers.csproj", "{1D76A8A7-4A1D-4A90-9939-377B77B445B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +32,19 @@ Global
 		{4E2AB6E5-7ED4-4902-880D-E570F39CDC06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E2AB6E5-7ED4-4902-880D-E570F39CDC06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E2AB6E5-7ED4-4902-880D-E570F39CDC06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE5BAFFC-C9D9-45D1-812D-F63E918D71F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE5BAFFC-C9D9-45D1-812D-F63E918D71F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE5BAFFC-C9D9-45D1-812D-F63E918D71F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE5BAFFC-C9D9-45D1-812D-F63E918D71F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D76A8A7-4A1D-4A90-9939-377B77B445B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D76A8A7-4A1D-4A90-9939-377B77B445B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D76A8A7-4A1D-4A90-9939-377B77B445B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D76A8A7-4A1D-4A90-9939-377B77B445B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D86BC592-A908-4166-81D4-A60F0A35E37D} = {FA0A1D4D-7289-4F18-8933-327EDAA4DE5D}
 		{4E2AB6E5-7ED4-4902-880D-E570F39CDC06} = {FA0A1D4D-7289-4F18-8933-327EDAA4DE5D}
+		{FE5BAFFC-C9D9-45D1-812D-F63E918D71F3} = {FA0A1D4D-7289-4F18-8933-327EDAA4DE5D}
+		{1D76A8A7-4A1D-4A90-9939-377B77B445B3} = {2929D561-016A-44A7-9F00-2AAB8C92FB16}
 	EndGlobalSection
 EndGlobal
